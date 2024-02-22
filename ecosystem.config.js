@@ -11,12 +11,13 @@ module.exports = {
       user: "root",
       host: "89.111.174.91",
       ref: "origin/master",
-      repo: "GIT_REPOSITORY",
-      path: "DESTINATION_PATH",
+      repo: "git@github.com:dyoneNero/plug-drevo43.git",
+      path: ".",
       "pre-deploy-local": "",
       "post-deploy":
-        "npm install && pm2 reload ecosystem.config.js --env production",
+        "source ~/.nvm/nvm.sh && npm install && npm run build && pm2 reload ecosystem.config.js --env production",
       "pre-setup": "",
+      ssh_options: "ForwardAgent=yes",
     },
   },
 };
