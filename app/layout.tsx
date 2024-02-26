@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Head from "next/head";
 import Script from "next/script";
+import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -34,6 +34,16 @@ export default function RootLayout({
                 webvisor:true
           });`}
       </Script>
+      <noscript>
+        <div>
+          <Image
+            src="https://mc.yandex.ru/watch/96573330"
+            className="absolute -left-96"
+            alt=""
+          />
+          dfdf
+        </div>
+      </noscript>
     </html>
   );
 }
