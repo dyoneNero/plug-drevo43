@@ -41,7 +41,6 @@ export default function RootLayout({
             className="absolute -left-96"
             alt=""
           />
-          dfdf
         </div>
       </noscript>
     </html>
