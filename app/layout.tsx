@@ -27,7 +27,7 @@ export default function RootLayout({
               (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
  
               ym(96573330, "init", {
-                    defer: true,
+                    defer: false,
                     clickmap:true,
                     trackLinks:true,
                     accurateTrackBounce:true,
