@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { Suspense } from "react";
-import { Metrika } from "./(components)/Metrika/Metrika";
 import Script from "next/script";
-import YandexMetrika from "./(components)/YandexMetrika/YandexMetrika";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -37,9 +34,6 @@ export default function RootLayout({
                     webvisor:true
               });`}
       </Script>
-      <Suspense fallback={<></>}>
-        <YandexMetrika />
-      </Suspense>
     </html>
   );
 }
